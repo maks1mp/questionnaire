@@ -1,0 +1,89 @@
+.final_screen {
+  min-width: 565px;
+  width: 100%;
+  min-height: 250px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+  border-radius: 2px;
+  padding: 24px;
+}
+
+.final_user_name {
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+.final_user_email {}
+
+.final_user_adress {
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+.small-gray {
+  color: rgb(110, 102, 102);
+  font-size: 12px;
+}
+
+.final_user_photo {
+  width: 200px;
+  min-height: 195px;
+}
+
+.final_social_link {
+  color: #2C49D4;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.final_social_link:hover,
+.final_social_link:active,
+.final_social_link:visited {
+  color: #2C49D4;
+}
+
+.final_info {
+  position: relative;
+  height: 195px;
+}
+
+.final_info,
+.final_image {
+  float: left;
+  width: 50%;
+}
+
+.final_image {
+  text-align: right;
+}
+
+.final_social_list {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.final_button_field {
+  width: 100%;
+  padding-top: 32px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width:767px) {
+  .final_screen {
+    width: 300px;
+    min-width: 300px;
+    margin-top: 140px;
+  }
+  .final_info,
+  .final_image {
+    width: 100%;
+    float: none;
+  }
+  .final_image {
+    text-align: center;
+    margin-top: 5px;
+  }
+}

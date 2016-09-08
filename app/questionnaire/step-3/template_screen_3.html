@@ -1,0 +1,11 @@
+<div class="step-3 step_content">
+  <h3>3. Отметьте социальные сети </h3>
+  <form action="" name="user_social">
+    <div class="inputs_group" ng-repeat="field in data.networks">
+      <label class="blue_checkbox">
+        <input type="checkbox" ng-click="clear($index)" name="field.f_name"  ng-model="field.model" ng-true-value="true" ng-false-value="false">{{field.name}}<span></span></label>
+      <input type="text" class="medium-input" ng-pattern="/[A-Za-z]{2,}\.[A-Za-z]{2,}\/\S{3,}/" name="field.input_data" ng-model="field.url" ng-if="showWhen(field.model)" value="">
+    </div>
+  </form>
+</div>
+

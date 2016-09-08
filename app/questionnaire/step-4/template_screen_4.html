@@ -1,0 +1,12 @@
+<div class="step-4 step_content">
+  <h3>4. Выберите любимого котика</h3>
+  <div class="picterus_group">
+    <div class="img_block" ng-repeat="img in blocks" ng-class="img.$class" ng-click="imgPicker(img.valid, img.src)">
+      <img src="{{img.src}}" alt="">
+    </div>
+    <div class="clearfix"></div>
+    <span class="err-message" ng-show="show_error == 'true'">Вы выбрали собаку. А надо котика.</span>
+  </div>
+  <div class="pictures_group_offset"></div>
+  
+</div>

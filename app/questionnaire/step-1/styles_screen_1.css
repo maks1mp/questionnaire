@@ -1,0 +1,21 @@
+.step-1 label span {
+  width: 100%;
+  position: absolute;
+  font-size: 15px;
+  top: 50%;
+  margin-left: 12px;
+  margin-top: -8px;
+  left: 100%;
+  color: #ff0000;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 960px) {
+  .step-1 label span {
+    position: static;
+    margin-top: 5px;
+    display: block;
+  }
+}
+
+

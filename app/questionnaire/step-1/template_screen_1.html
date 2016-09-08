@@ -1,0 +1,13 @@
+<div class="step-1 step_content">
+  <h3>1. Введите имя и e-mail</h3>
+  <form action="" name="user_data" novalidate>
+    <label class="large-group" ng-class="error_">
+      <input class="large-input" type="text" placeholder="Имя" name="name" ng-model="data.name" ng-minlength="2" />
+      <span ng-show="user_data.name.$invalid"> - cлишком короткое имя</span></label>
+    <label class="large-group" ng-class="error_">
+      <input class="large-input" type="email" placeholder="E-mail" name="email" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/" ng-model="data.email">
+      <span ng-show="user_data.email.$invalid"> - в адресе должен быть символ &laquo;@&raquo;</span>
+    </label>
+  </form>
+</div>
+

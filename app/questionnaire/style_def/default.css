@@ -1,0 +1,141 @@
+body {
+  min-width: 320px;
+  max-width: 1920px;
+  background-color: #f5f5f5;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.centering {
+  min-width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+::-webkit-input-placeholder {
+  color: #bbbbbb;
+}
+
+::-moz-placeholder {
+  color: #bbbbbb;
+}
+
+:-moz-placeholder {
+  color: #bbbbbb;
+}
+
+:-ms-input-placeholder {
+  color: #bbbbbb;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.large-input {
+  border-radius: 2px;
+  border: 1px solid transparent;
+  width: 100%;
+  max-width: 310px;
+  height: 55px;
+  text-indent: 15px;
+  font-size: 15px;
+  -webkit-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+}
+
+.medium-input {
+  position: absolute;
+  margin-top: -12px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  height: 35px;
+  text-indent: 15px;
+  font-size: 15px;
+  -webkit-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+}
+
+.step_content {
+  width: 100%;
+}
+
+.step_content .large-group:first-of-type {
+  margin-bottom: 16px;
+}
+
+.step_content .large-group {
+  display: block;
+  position: relative;
+}
+
+.step_content>h3 {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.steps_arrows {
+  margin-top: 150px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.text-center {
+  text-align: center;  
+}
+
+input.ng-invalid,
+.error-field {
+  border: 1px solid red;
+}
+
+.zi-101 {
+  z-index: 101;
+}
+
+.zi-100 {
+  z-index: 100;
+}
+
+.orange-btn {
+  display: inline-block;
+  width: 150px;
+  height: 35px;
+  -webkit-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.20);
+  border: none;
+  border-radius: 2px;
+  background-color: #FF9800;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.err-message {
+  color: #ff0000;
+}
+
+.done {
+  color: #FF9800;
+}
+.active {
+  color: red !important;
+  
+}
+
+@media only screen and (max-width: 460px) {
+}

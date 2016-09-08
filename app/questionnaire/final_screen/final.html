@@ -1,0 +1,16 @@
+<div class="final_screen">
+  <div class="final_info">
+    <h2 class="final_user_name" ng-bind="data.name"></h3>
+  <h4 class="final_user_email small-gray" ng-bind="data.email"></h4>
+  <p class="final_user_adress">{{data.city}}, {{data.country}}</p>
+  <ul class="final_social_list">
+    <li ng-repeat="link in data.networks" ng-if="link.model"><a href="http://{{link.url}}" class="final_social_link">{{link.name}}: <span class="small-gray">{{link.url}}</span></a></li>
+  </ul>
+</div>
+<div class="final_image">
+    <img class="final_user_photo pull-right" src="{{data.picture.url}}" alt="">
+</div>
+</div>
+<div class="final_button_field">
+  <button ng-click="tryAgain()" class="orange-btn">Пройти заново</button>
+</div>

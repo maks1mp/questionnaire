@@ -1,0 +1,5 @@
+<div class="steps_arrows">
+  <button class="step_btn text-right" ng-hide="config.screen_index>3" ng-click="prevStep()"><i class="arr-left"></i> Предыдущий</button>
+  <button class="step_btn text-left" ng-hide="config.screen_index == 3 || config.screen_index>3" ng-click="nextStep()">Следующий <i class="arr-right"></i></button>
+  <button class="orange-btn text-center" ng-disabled="data.picture.valid == false" ng-show="config.screen_index == 3" ng-click="toFinalScreen()">Завершить</button>
+</div>

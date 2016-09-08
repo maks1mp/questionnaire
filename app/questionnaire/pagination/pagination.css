@@ -1,0 +1,67 @@
+.btn-pagination {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.steps_arrows .step_btn:first-child {
+  margin-right: 16px;
+}
+
+.step_btn {
+  position: relative;
+  font-size: 15px;
+  border: none;
+  width: 150px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #fff;
+  font-weight: 600;
+  color: #ff9800;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.arr-left,
+.arr-right {
+  position: absolute;
+  margin-top: -9px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/sprite-hints.png);
+  vertical-align: sub;
+}
+
+.arr-left {
+  background-position: -2px -3px;
+  left: 8px;
+}
+
+.arr-right {
+  background-position: -20px -3px;
+  right: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  .step_btn {
+    width: 138px;
+  }
+}

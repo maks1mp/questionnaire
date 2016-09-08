@@ -1,0 +1,20 @@
+<div class="step-2 step_content">
+  <h3>2. Выберите страну и город</h3>
+  <form action="" name="user_adress"></form>
+  <label class="large-group">
+    <input class="large-input" type="text" ng-model="countries_filter" name="country">
+    <ul class="dropdown-menu zi-101" ng-show="visible_country_dropdown==true">
+      <li ng-repeat="country in countries_list | filter:countries_filter" ng-bind="country.title" ng-click="findCity(country.id, country.title)"></li>
+    </ul>
+    <button class="dropdown-btn" ng-click="countriesDropdown(countries_filter, true_country)">▼</button>
+  </label>
+
+  <label class="large-group">
+    <input class="large-input" type="text" ng-model="cities_filter" name="city">
+
+    <ul class="dropdown-menu zi-100" ng-show="visible_city_dropdown==true">
+      <li ng-repeat="city in cities_list | filter:cities_filter" ng-bind="city.name" ng-click="pickCity(city.name)"></li>
+    </ul>
+    <button class="dropdown-btn" ng-click="citiesDropdown(cities_show_list)">▼</button>
+  </label>
+</div>

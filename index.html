@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="app/questionnaire/style_def/reset.css">
+  <link rel="stylesheet" href="app/questionnaire/style_def/default.css">
+  <link rel="stylesheet" href="app/questionnaire/step-1/styles_screen_1.css">
+  <link rel="stylesheet" href="app/questionnaire/step-2/styles_screen_2.css">
+  <link rel="stylesheet" href="app/questionnaire/step-3/styles_screen_3.css">
+  <link rel="stylesheet" href="app/questionnaire/step-4/styles_screen_4.css">
+  <link rel="stylesheet" href="app/questionnaire/final_screen/final.css">
+  <link rel="stylesheet" href="app/questionnaire/pagination/pagination.css">
+
+</head>
+
+<body ng-app="questionnaire">
+  <main ng-controller="mainCtrl">
+    <section class="centering">
+      
+      <pages-pagination config="config"></pages-pagination>
+
+      <first-screen ng-show="config.screen_index == 0"></first-screen>
+      <second-screen ng-show="config.screen_index == 1"></second-screen>
+      <third-screen ng-show="config.screen_index == 2"></third-screen>
+      <fourth-screen ng-show="config.screen_index == 3"></fourth-screen>
+      
+      <final-screen data="data" ng-show="config.final_screen_show == true"></final-screen>
+
+      <pagination-steps config="config"></pagination-steps>
+
+    </section>
+  </main>
+
+  <script src="app/libs/angular.min.js"></script>
+  <!--  app-->
+  <script src="app/app.js"></script>
+  <!--  controllers-->
+  <script src="app/questionnaire/controllers/main.js"></script>
+  <!--  directives-->
+
+  <script src="app/questionnaire/step-1/screen_1.js"></script>
+  <script src="app/questionnaire/step-2/screen_2.js"></script>
+ <script src="app/questionnaire/step-3/screen_3.js"></script>
+  <script src="app/questionnaire/step-4/screen_4.js"></script>
+
+  <script src="app/questionnaire/final_screen/final.js"></script>
+  <script src="app/questionnaire/pagination/pagination.js"></script>
+  <script src="app/questionnaire/pagination/pagination-steps.js"></script>
+  <!--  services-->
+  <script src="app/questionnaire/get_cities/service.js"></script>
+</body>
+
+</html>
